@@ -1,0 +1,75 @@
+# Dependencias
+node_modules/
+jspm_packages/
+web_modules/
+package-lock.json
+yarn.lock
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# IDE
+.vscode/
+.vscode-test/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.tern-port
+
+# Build y Logs
+dist/
+build/
+build/Release
+out
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Misc / Caches
+.cache/
+.parcel-cache
+temp/
+tmp/
+.temp
+*.bak
+.npm
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.node_repl_history
+*.tgz
+
+# Frameworks / Herramientas
+.next
+.nuxt
+.vuepress/dist
+.svelte-kit/
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
+.grunt
+bower_components
+.lock-wscript
