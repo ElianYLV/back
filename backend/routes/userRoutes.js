@@ -1,7 +1,16 @@
 const express = require('express');
-const userController = require('../controllers/userController');
-const router = express.Router();
+const app = express();
 
-router.post('/login', userController.login);
+const pokemonRoutes = require('./routes/pokemonRoutes');
+const pokemongen1Routes = require('./routes/pokemongen1Routes');
+const userRoutes = require('./routes/userRoutes');
 
-module.exports = router;
+app.use(express.json());
+
+app.use('/api/pokemon', pokemonRoutes);
+app.use('/api/pokemongen1', pokemongen1Routes);
+app.use('/api/usuarios', userRoutes);
+
+app.listen(3001, () => {
+  console.log('Servidor corriendo');
+});
