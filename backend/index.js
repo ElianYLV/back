@@ -9,6 +9,7 @@ app.use(express.json());
 
 // RUTAS
 app.use('/api/pokemon', require('./routes/pokemonRoutes'));
+app.use('/api/pokemongen1', require('./routes/pokemongen1Routes'));
 app.use('/api/usuarios', require('./routes/userRoutes'));
 
 const PORT = process.env.PORT || 3001;
